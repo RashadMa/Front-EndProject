@@ -1,6 +1,3 @@
-@import "helpers/variables";
-@import "helpers/mixins";
-
-body {
-    color: white;
-}
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./partials/home/homeMain";
