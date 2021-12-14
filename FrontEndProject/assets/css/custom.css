@@ -5,6 +5,10 @@
   list-style-type: none;
   box-sizing: border-box;
 }
+::selection {
+  color: #fff;
+  background-color: #585ce9;
+}
 .container {
   width: 1140px;
   margin: 0 auto;
