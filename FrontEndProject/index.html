@@ -8,7 +8,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="assets/media/images/favicon/favicon.ico"
+      href="./assets/media/images/favicon/favicon.ico"
     />
     <link
       rel="stylesheet"
@@ -16,59 +16,97 @@
       integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="assets/js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <script
-      src="https://kit.fontawesome.com/80b411494b.js"
-      crossorigin="anonymous"
-      defer
+    src="https://kit.fontawesome.com/80b411494b.js"
+    crossorigin="anonymous"
+    defer
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="navbar d-flex align-center">
         <div class="container custom-container">
-          <div class="row custom-row">
-            <div class="right-side col-2 d-flex align-center">
+          <div class="row custom-row justify-between">
+            <div class="nav-right-side col-2 d-flex align-center">
               <div class="logo">
                 <figure>
-                  <img src="assets/media/images/navbar/logo/logo-blue.png" alt="logo">
+                  <img
+                    src="./assets/media/images/navbar/logo/logo-blue.png"
+                    alt="logo"
+                  />
                 </figure>
               </div>
             </div>
-            <div class="left-side col-10 d-flex align-center justify-between">
-              <div class="options">
-                <ul class="d-flex nav-list">
-                  <li class="nav-list-items"><a href="#" class="nav-list-items-links">Home</a></li>
-                  <li class="nav-list-items submenu"><a href="#" class="nav-list-items-links">Discover <i class="fal fa-angle-down"></i></a>
+            <div
+              class="nav-left-side col-10 d-flex align-center justify-between"
+            >
+                <ul class="d-flex nav-list" id="nav-list-ul">
+                  <li class="nav-list-items">
+                    <a href="#" class="nav-list-items-links">Home</a>
+                  </li>
+                  <li class="nav-list-items submenu">
+                    <a href="#" class="nav-list-items-links"
+                      >Discover </a><i class="fal fa-angle-down"></i
+                        >
                     <ul class="submenu-list" id="first-submenu">
-                      <li class="submenu-list-items"><a href="">Features</a></li>
-                      <li class="submenu-list-items"><a href="">Our Teams</a></li>
-                      <li class="submenu-list-items"><a href="">Pricing Plans</a></li>
-                      <li class="submenu-list-items"><a href="">Latest Blogs</a></li>
+                      <li class="submenu-list-items">
+                        <a href="">Features</a>
+                      </li>
+                      <li class="submenu-list-items">
+                        <a href="">Our Teams</a>
+                      </li>
+                      <li class="submenu-list-items">
+                        <a href="">Pricing Plans</a>
+                      </li>
+                      <li class="submenu-list-items">
+                        <a href="">Latest Blogs</a>
+                      </li>
                     </ul>
                   </li>
-                  <li class="nav-list-items submenu"><a href="#" class="nav-list-items-links">Pages <i class="fal fa-angle-down"></i></a>
+                  <li class="nav-list-items submenu">
+                    <a href="#" class="nav-list-items-links"
+                      >Pages </a><i class="fal fa-angle-down"></i
+                    >
                     <ul class="submenu-list">
-                      <li class="submenu-list-items"><a href="">About Us</a></li>
-                      <li class="submenu-list-items"><a href="">Features</a></li>
+                      <li class="submenu-list-items">
+                        <a href="">About Us</a>
+                      </li>
+                      <li class="submenu-list-items">
+                        <a href="">Features</a>
+                      </li>
                       <li class="submenu-list-items"><a href="">FAQ's</a></li>
                       <li class="submenu-list-items"><a href="">Blog</a></li>
                     </ul>
                   </li>
-                  <li class="nav-list-items"><a href="#" class="nav-list-items-links">Contact</a></li>
+                  <li class="nav-list-items">
+                    <a href="#" class="nav-list-items-links">Contact</a>
+                  </li>
                 </ul>
-              </div>
-              <div class="auth">
+              <div class="nav-auth">
                 <ul class="auth-list d-flex">
-                  <li class="auth-list-items"><a href="" class="auth-list-items-links">SIGN IN</a></li>
-                  <li class="auth-list-items"><a href="" class="auth-list-items-links">SIGN UP</a></li>
+                  <li class="auth-list-items">
+                    <a href="" class="auth-list-items-links">SIGN IN</a>
+                  </li>
+                  <li class="auth-list-items">
+                    <a href="" class="auth-list-items-links">SIGN UP</a>
+                  </li>
                 </ul>
               </div>
+            </div>
+            <div class="hamburger-menu">
+              <span class="hamburger-bread"></span>
+              <span class="hamburger-meat"></span>
+              <span class="hamburger-bread"></span>
             </div>
           </div>
         </div>

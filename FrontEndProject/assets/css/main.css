@@ -4,50 +4,59 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 100;
   height: 100px; }
-  .navbar .custom-container .custom-row .right-side .logo:hover {
+  .navbar .logo:hover {
     cursor: pointer; }
-  .navbar .custom-container .custom-row .left-side .options .nav-list-items {
-    font-family: "Nunito", sans-serif;
-    padding: 0 20px;
-    line-height: 40px; }
-    .navbar .custom-container .custom-row .left-side .options .nav-list-items .nav-list-items-links {
-      color: #6F8BA4;
-      font-weight: 400;
-      font-size: 14px;
-      letter-spacing: 1px; }
-      .navbar .custom-container .custom-row .left-side .options .nav-list-items .nav-list-items-links i {
-        transform: translate(7px, 2px); }
-  .navbar .custom-container .custom-row .left-side .options .nav-list .submenu {
+  .navbar .row {
     position: relative; }
-    .navbar .custom-container .custom-row .left-side .options .nav-list .submenu .submenu-list {
-      position: absolute;
-      width: 200px;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      border-radius: 5px;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-      top: 40px;
-      transform: translateY(-2em);
-      visibility: hidden;
-      opacity: 0; }
-      .navbar .custom-container .custom-row .left-side .options .nav-list .submenu .submenu-list .submenu-list-items {
-        padding-left: 20px;
-        height: 40px;
-        line-height: 40px;
-        transition: all 0.3s ease 0s;
-        font-size: 13px;
-        border-bottom: 1px solid #f5f5f5;
+  .navbar .nav-list {
+    display: flex; }
+    .navbar .nav-list-items {
+      font-family: "Nunito", sans-serif;
+      padding: 0 20px;
+      line-height: 40px; }
+      .navbar .nav-list-items .nav-list-items-links {
+        color: #6F8BA4;
+        font-weight: 400;
+        font-size: 14px;
         letter-spacing: 1px; }
-        .navbar .custom-container .custom-row .left-side .options .nav-list .submenu .submenu-list .submenu-list-items a {
-          color: #3B566E; }
-    .navbar .custom-container .custom-row .left-side .options .nav-list .submenu:hover .submenu-list {
-      transform: translateY(0%);
-      opacity: 1;
-      visibility: visible;
-      transition-delay: 0s, 0s, 0.3s; }
-  .navbar .custom-container .custom-row .left-side .auth .auth-list-items .auth-list-items-links {
+      .navbar .nav-list-items i {
+        transform: translate(7px, 2px);
+        color: #6F8BA4; }
+    .navbar .nav-list .submenu {
+      position: relative; }
+      .navbar .nav-list .submenu .submenu-list {
+        position: absolute;
+        width: 200px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+        top: 40px;
+        transform: translateY(-2em);
+        visibility: hidden;
+        opacity: 0; }
+        .navbar .nav-list .submenu .submenu-list .submenu-list-items {
+          padding-left: 20px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 13px;
+          border-bottom: 1px solid #f5f5f5;
+          letter-spacing: 1px;
+          transition: all 0.15s ease 0s; }
+          .navbar .nav-list .submenu .submenu-list .submenu-list-items a {
+            color: #3B566E; }
+          .navbar .nav-list .submenu .submenu-list .submenu-list-items:hover {
+            background-color: #f5f5f5;
+            border-left: 3px solid #585CE9; }
+            .navbar .nav-list .submenu .submenu-list .submenu-list-items:hover a {
+              transform: translateX(25px); }
+      .navbar .nav-list .submenu:hover .submenu-list {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s, 0s, 0.3s; }
+  .navbar .auth-list-items .auth-list-items-links {
     border: 1px solid #585CE9;
     color: #585CE9;
     border-radius: 5px;
@@ -57,14 +66,62 @@
     font-size: 12px;
     font-weight: 400;
     transition: all 0.3s ease 0s; }
-    .navbar .custom-container .custom-row .left-side .auth .auth-list-items .auth-list-items-links:hover {
+    .navbar .auth-list-items .auth-list-items-links:hover {
       background-color: #585CE9;
       color: #fff; }
-  .navbar .custom-container .custom-row .left-side .auth .auth-list-items:nth-child(2) .auth-list-items-links {
+  .navbar .auth-list-items:nth-child(2) .auth-list-items-links {
     transition: all 0.3s ease 0s;
     margin-left: 15px;
     background-color: #585CE9;
     color: #fff; }
-    .navbar .custom-container .custom-row .left-side .auth .auth-list-items:nth-child(2) .auth-list-items-links:hover {
+    .navbar .auth-list-items:nth-child(2) .auth-list-items-links:hover {
       background-color: #fff;
       color: #585CE9; }
+  .navbar .hamburger-menu {
+    display: none;
+    flex-direction: column; }
+    .navbar .hamburger-menu span {
+      background-color: #3B566E;
+      width: 30px;
+      height: 2px;
+      margin: 4px 0;
+      transition: all 0.4s;
+      display: inline-block; }
+    .navbar .hamburger-menu .hamburger-bread {
+      width: 75%; }
+
+@media only screen and (max-width: 992px) {
+  .nav-left-side .nav-list,
+  .nav-auth,
+  .nav-options-container,
+  .nav-options .nav-list {
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+  .nav-left-side {
+    width: unset; }
+  .navbar .custom-container .row .hamburger-menu {
+    display: flex; }
+  #nav-list-ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    height: 50px;
+    align-items: center; }
+    #nav-list-ul li i {
+      display: flex;
+      align-items: center; }
+    #nav-list-ul li a {
+      color: #0019; }
+  .submenu:hover .submenu-list {
+    transform: unset;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s, 0s, 0s; } }
+
+@media only screen and (min-width: 992px) {
+  #nav-list-ul {
+    display: flex !important; } }
