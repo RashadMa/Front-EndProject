@@ -1,0 +1,26 @@
+@import "../main/navMain";
+
+#home-features {
+    background: #F7FAFD;
+    padding-top: 100px;
+    font-family: $navbar-fonts;
+
+    .features-content {
+        h2 {
+            font-weight: 300;
+            font-size: 28px;
+            color: $second-font-color;
+            letter-spacing: 1.75px;
+            height: 45px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            color: $font-color;
+            line-height: 28px;
+            letter-spacing: 1px;
+        }
+    }
+}

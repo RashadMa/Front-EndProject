@@ -1,0 +1,62 @@
+@import "../main/navMain";
+
+#home-welcoming {
+    font-family: $navbar-fonts;
+
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: url(../media/images/backgrounds/header-bg.svg) top left no-repeat;
+
+    .col-7 {
+        height: 543px;
+    }
+
+    .welcoming-head-content {
+        h1 {
+            font-weight: 300;
+            font-size: 28px;
+            color: #1E3056;
+            line-height: 46px;
+            letter-spacing: 0.93px;
+            margin-bottom: 20px;
+
+            span {
+                color: $main-color;
+            }
+        }
+    }
+
+    .welcoming-text-content {
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            color: #697BA2;
+            line-height: 28px;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        position: relative;
+    }
+
+    .learn-more-button {
+        width: 170px;
+        margin: auto;
+        display: inline-block;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        background: $main-color;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 0.75px;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background: $hover-color;
+        }
+    }
+}
