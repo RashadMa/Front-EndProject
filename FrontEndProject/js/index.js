@@ -17,14 +17,12 @@
 // }
 
 $(document).ready(function () {
-  $(".hamburger-menu").click(function () {
+  $(".hamburger-menu").on("click", function () {
     $("#nav-list-ul").slideToggle("fast");
-    if (window.screen.width == 992) {
-          $("#nav-list-ul").css("display", "flex");
-    }
+    $("#nav-list-ul").css("background", "white")
   });
-  $(".submenu").click(function(){
-    $("#first-submenu").slideToggle("fast");
-    console.log("salam");
+  $(".submenu").on("click", function(){
+    // $("#first-submenu").toggleClass("active")
+    // $("#first-submenu").slideToggle("fast")
   })
-});
+})
