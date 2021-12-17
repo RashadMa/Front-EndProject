@@ -42,7 +42,7 @@
         }
         .directions {
             padding-right: 15px;
-            padding-left: 15px;
+            // padding-left: 15px;
         }
         #padding-remover{
             padding-left: 0;
@@ -99,5 +99,13 @@
         opacity: 0;
         padding-left: 0;
         transition: all 0.8s ease 0s;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .clouds{
+        width: 100%;
+    }
+    #cloud-image{
+        padding: 0 !important;
     }
 }

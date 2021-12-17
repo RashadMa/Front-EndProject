@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#nav-list-ul").slideToggle("fast");
     $("#nav-list-ul").css("background", "white")
   });
+  //main
   $(document).on("scroll", function(){
     if (window.scrollY > 30) {
       $(".navbar").addClass("sticky")

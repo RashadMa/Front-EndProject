@@ -2,87 +2,60 @@
 
 #home-welcoming {
     font-family: $navbar-fonts;
-
     padding-top: 150px;
     padding-bottom: 100px;
     background: url(../media/images/backgrounds/header-bg.svg) top left no-repeat;
 
-    .cart-first-image {
-        max-width: 100%;
-        height: 333px;
-        // transform: scale(1.3);
+    .config {
+        overflow: hidden;
+        border-radius: 5px;
+        margin: 6px;
+    }
+
+    .first-picture-div,
+    .second-picture-div,
+    .third-picture-div,
+    .fourth-picture-div {
+        img{
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .cart-first-image,
+    .cart-second-image,
+    .cart-third-image,
+    .cart-fourth-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+
+    .first-picture-div {
+        width: 100%;
+        height: 332px;
+        margin-bottom: 9px;
         overflow: hidden;
     }
 
-    .cart-second-image {
-        max-width: 100%;
-        height: 252px;
+    .second-picture-div {
+        margin-bottom: 9px;
+        width: 100%;
+        height: 251px;
+        overflow: hidden;
     }
 
-    .cart-third-image {
-        max-width: 100%;
-        height: 201px;
+    .third-picture-div {
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
     }
 
-    .cart-fourth-image {
-        max-width: 100%;
+    .fourth-picture-div {
+        overflow: hidden;
+        width: 100%;
         height: 281px;
-        margin-top: -71px !important;
-    }
-
-    .col-6 {
-        .col-6 {
-            overflow: hidden;
-            border-radius: 5px;
-            margin: 9px;
-
-            // .cart-first-image {
-            //     width: 100%;
-            //     height: 265px !important;
-            //     transform: scale(1.45);
-            //     transition: all 0.4s;
-
-            //     &:hover {
-            //         transform: scale(1.6);
-            //     }
-            // }
-
-            // .cart-second-image {
-            //     overflow: hidden;
-            //     width: 100%;
-            //     max-height: 252px;
-            //     transform: scale(1.45);
-            //     transition: all 0.4s;
-
-            //     &:hover {
-            //         transform: scale(1.6);
-            //     }
-            // }
-            // .cart-third-image {
-            //     padding-top: 93px;
-            //     overflow: hidden;
-            //     width: 100%;
-            //     max-height: 200px;
-            //     transform: scale(1.45);
-            //     transition: all 0.4s;
-
-            //     &:hover {
-            //         transform: scale(1.6);
-            //     }
-            // }
-            // .cart-forth-image {
-            //     padding-top: 77px;
-            //     overflow: hidden;
-            //     width: 100%;
-            //     max-height: 255px;
-            //     transform: scale(1.45);
-            //     transition: all 0.4s;
-
-            //     &:hover {
-            //         transform: scale(1.6);
-            //     }
-            // }
-        }
     }
 
     .welcoming-head-content {
