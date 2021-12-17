@@ -16,11 +16,88 @@
         }
 
         p {
+            margin-bottom: 30px;
             font-weight: 300;
             font-size: 16px;
             color: $font-color;
             line-height: 28px;
             letter-spacing: 1px;
         }
+    }
+
+    .features-directions {
+        .direction-button {
+
+            &:hover::after {
+                height: 120px;
+                background: $main-color;
+            }
+
+            &:hover i {
+                color: #fff;
+                margin-left: 30px;
+                ;
+
+            }
+        }
+        .directions {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        #padding-remover{
+            padding-left: 0;
+        }
+        
+        .direction-button {
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 150px;
+                position: absolute;
+                height: 100px;
+                left: -70px;
+                top: 0px;
+                background: #F7FAFD;
+                transform: rotate(60deg);
+                transition: all 0.3s ease 0s;
+            }
+
+            i {
+                color: black;
+                margin-left: 25px;
+                margin-right: 37px;
+                z-index: 2;
+                transition: all 0.3s ease 0s;
+                position: relative;
+            }
+
+            span {
+                // position: relative;
+                z-index: 2;
+                transition: all 0.3s ease 0s;
+                color: $second-font-color;
+            }
+
+            width: 100%;
+            margin: auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            background: #fff;
+            margin-bottom: 20px;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.88px;
+            outline: none;
+            overflow: hidden;
+        }
+    }
+    #cloud-image{
+        opacity: 0;
+        padding-left: 0;
+        transition: all 0.8s ease 0s;
     }
 }

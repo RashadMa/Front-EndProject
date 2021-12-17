@@ -209,8 +209,24 @@ footer {
   padding-top: 150px;
   padding-bottom: 100px;
   background: url(../media/images/backgrounds/header-bg.svg) top left no-repeat; }
-  #home-welcoming .col-7 {
-    height: 543px; }
+  #home-welcoming .cart-first-image {
+    max-width: 100%;
+    height: 333px;
+    overflow: hidden; }
+  #home-welcoming .cart-second-image {
+    max-width: 100%;
+    height: 252px; }
+  #home-welcoming .cart-third-image {
+    max-width: 100%;
+    height: 201px; }
+  #home-welcoming .cart-fourth-image {
+    max-width: 100%;
+    height: 281px;
+    margin-top: -71px !important; }
+  #home-welcoming .col-6 .col-6 {
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 9px; }
   #home-welcoming .welcoming-head-content h1 {
     font-weight: 300;
     font-size: 28px;
@@ -461,10 +477,12 @@ footer {
     padding: 30px;
     text-align: center;
     margin-bottom: 30px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.8s ease 0s;
     border-radius: 5px;
     margin-left: 15px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    transform: translateY(100px);
+    opacity: 0; }
     #home-square-cards .square-card:hover {
       background-color: #585CE9; }
       #home-square-cards .square-card:hover h5,
@@ -723,11 +741,64 @@ footer {
     height: 45px;
     margin-bottom: 10px; }
   #home-features .features-content p {
+    margin-bottom: 30px;
     font-weight: 300;
     font-size: 16px;
     color: #6F8BA4;
     line-height: 28px;
     letter-spacing: 1px; }
+  #home-features .features-directions .direction-button:hover::after {
+    height: 120px;
+    background: #585CE9; }
+  #home-features .features-directions .direction-button:hover i {
+    color: #fff;
+    margin-left: 30px; }
+  #home-features .features-directions .directions {
+    padding-right: 15px;
+    padding-left: 15px; }
+  #home-features .features-directions #padding-remover {
+    padding-left: 0; }
+  #home-features .features-directions .direction-button {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+    outline: none;
+    overflow: hidden; }
+    #home-features .features-directions .direction-button::after {
+      content: '';
+      width: 150px;
+      position: absolute;
+      height: 100px;
+      left: -70px;
+      top: 0px;
+      background: #F7FAFD;
+      transform: rotate(60deg);
+      transition: all 0.3s ease 0s; }
+    #home-features .features-directions .direction-button i {
+      color: black;
+      margin-left: 25px;
+      margin-right: 37px;
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+      position: relative; }
+    #home-features .features-directions .direction-button span {
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+      color: #3B566E; }
+  #home-features #cloud-image {
+    opacity: 0;
+    padding-left: 0;
+    transition: all 0.8s ease 0s; }
 
 footer {
   background-color: #585CE9;
@@ -947,8 +1018,61 @@ footer {
     height: 45px;
     margin-bottom: 10px; }
   #home-features .features-content p {
+    margin-bottom: 30px;
     font-weight: 300;
     font-size: 16px;
     color: #6F8BA4;
     line-height: 28px;
     letter-spacing: 1px; }
+  #home-features .features-directions .direction-button:hover::after {
+    height: 120px;
+    background: #585CE9; }
+  #home-features .features-directions .direction-button:hover i {
+    color: #fff;
+    margin-left: 30px; }
+  #home-features .features-directions .directions {
+    padding-right: 15px;
+    padding-left: 15px; }
+  #home-features .features-directions #padding-remover {
+    padding-left: 0; }
+  #home-features .features-directions .direction-button {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+    outline: none;
+    overflow: hidden; }
+    #home-features .features-directions .direction-button::after {
+      content: '';
+      width: 150px;
+      position: absolute;
+      height: 100px;
+      left: -70px;
+      top: 0px;
+      background: #F7FAFD;
+      transform: rotate(60deg);
+      transition: all 0.3s ease 0s; }
+    #home-features .features-directions .direction-button i {
+      color: black;
+      margin-left: 25px;
+      margin-right: 37px;
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+      position: relative; }
+    #home-features .features-directions .direction-button span {
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+      color: #3B566E; }
+  #home-features #cloud-image {
+    opacity: 0;
+    padding-left: 0;
+    transition: all 0.8s ease 0s; }
