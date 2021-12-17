@@ -490,6 +490,10 @@
     #home-our-teams .card:hover .person {
       bottom: -55px; }
 
+@media only screen and (max-width: 992px) {
+  .card-col {
+    margin-bottom: 100px; } }
+
 footer {
   background-color: #585CE9;
   padding-top: 70px;
