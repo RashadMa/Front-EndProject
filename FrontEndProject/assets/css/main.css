@@ -1,5 +1,5 @@
 #home-welcoming {
-  font-family: "Nunito", sans-serif;
+  font-family: Nunito;
   padding-top: 150px;
   padding-bottom: 100px;
   background: url(../media/images/backgrounds/header-bg.svg) top left no-repeat; }
@@ -177,7 +177,7 @@
         font-size: 18px;
         color: #585CE9; }
     #home-square-cards .square-card h5 {
-      font-family: "Nunito", sans-serif;
+      font-family: Nunito;
       font-weight: 300;
       font-size: 16px;
       color: #3B566E;
@@ -187,7 +187,7 @@
       z-index: 2;
       transition: all 0.3s ease 0s; }
     #home-square-cards .square-card p {
-      font-family: "Nunito", sans-serif;
+      font-family: Nunito;
       font-weight: 300;
       font-size: 14px;
       color: #6F8BA4;
@@ -202,7 +202,7 @@
   background: #F7FAFD;
   padding-top: 100px;
   padding-bottom: 80px;
-  font-family: "Nunito", sans-serif; }
+  font-family: Nunito; }
   #home-features .features-content h2 {
     font-weight: 300;
     font-size: 28px;
@@ -280,7 +280,7 @@
 #home-features-part-2 {
   padding-top: 100px;
   padding-bottom: 80px;
-  font-family: "Nunito", sans-serif; }
+  font-family: Nunito; }
   #home-features-part-2 .features-content h2 {
     font-weight: 300;
     font-size: 28px;
@@ -403,10 +403,97 @@
   top: 0;
   left: 0; }
 
+#home-our-teams {
+  padding-bottom: 80px;
+  padding-top: 100px; }
+  #home-our-teams .content-header h2 {
+    font-weight: 300;
+    font-size: 28px;
+    color: #3B566E;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  #home-our-teams .content-header p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 30px; }
+  #home-our-teams .card {
+    box-shadow: rgba(100, 100, 111, 0.13) 0px 7px 29px 0px;
+    border-radius: 5px;
+    position: relative;
+    margin: 12px; }
+    #home-our-teams .card .card-body {
+      text-align: center;
+      overflow: hidden; }
+      #home-our-teams .card .card-body .personal-info {
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        #home-our-teams .card .card-body .personal-info::before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+          height: 68px;
+          transition: all 0.4s ease 0s;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
+      #home-our-teams .card .card-body .text-content {
+        font-weight: 300;
+        font-size: 14px;
+        color: #6F8BA4;
+        letter-spacing: 1px;
+        line-height: 26px;
+        margin-bottom: 60px; }
+      #home-our-teams .card .card-body .name {
+        font-size: 16px;
+        color: #fff;
+        margin-top: 5px;
+        font-weight: 300;
+        position: relative; }
+      #home-our-teams .card .card-body .job {
+        position: relative;
+        font-weight: 300;
+        font-size: 12px;
+        color: #E5E9F7; }
+    #home-our-teams .card .social {
+      margin-bottom: 15px; }
+    #home-our-teams .card .social-icons {
+      position: relative; }
+      #home-our-teams .card .social-icons a {
+        color: #585CE9;
+        transition: all 0.4s ease 0s; }
+    #home-our-teams .card .col-10 {
+      margin: 0 auto; }
+    #home-our-teams .card .person {
+      width: 96px;
+      height: 96px;
+      border: 6px solid #fff;
+      overflow: hidden;
+      border-radius: 100%;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      bottom: -45px;
+      transition: all 0.4s ease 0s;
+      box-shadow: rgba(100, 100, 111, 0.13) 0px 7px 29px 0px; }
+    #home-our-teams .card:hover .personal-info::before {
+      height: 125px; }
+    #home-our-teams .card:hover .social-icons a {
+      color: white; }
+    #home-our-teams .card:hover .person {
+      bottom: -55px; }
+
 footer {
   background-color: #585CE9;
   padding-top: 70px;
-  font-family: "Nunito", sans-serif;
+  font-family: Nunito;
   color: #fff; }
   footer .footer-logo {
     margin-bottom: 30px; }
@@ -474,7 +561,7 @@ footer {
   .navbar .row {
     position: relative; }
   .navbar #nav-list-ul .nav-list-items {
-    font-family: "Nunito", sans-serif;
+    font-family: Nunito;
     padding: 0 20px;
     line-height: 40px;
     transition: 0.3s; }
@@ -527,7 +614,7 @@ footer {
     color: #585CE9;
     border-radius: 5px;
     padding: 7px 25px;
-    font-family: "Nunito", sans-serif;
+    font-family: Nunito;
     letter-spacing: 0.5px;
     font-size: 12px;
     font-weight: 400;
