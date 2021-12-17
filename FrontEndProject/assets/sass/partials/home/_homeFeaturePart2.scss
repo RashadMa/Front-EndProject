@@ -98,14 +98,19 @@
 
     #cloud-image-part-2 {
         opacity: 0;
-        padding-left: 0;
+        transform: translateX(-20%);
         transition: all 0.8s ease 0s;
+    }
+    .clouds {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 992px) {
     .clouds {
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 25px;
     }
 
@@ -113,9 +118,5 @@
         h2 {
             margin-bottom: 35px !important;
         }
-    }
-
-    #cloud-image-part-2 {
-        padding: 0 !important;
     }
 }

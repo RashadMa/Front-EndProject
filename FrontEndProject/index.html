@@ -18,9 +18,12 @@
   <title>Jirono - IT Solutions and Corporate Template</title>
   <script src="https://kit.fontawesome.com/80b411494b.js" crossorigin="anonymous" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+    integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
   <script src="./js/index.js" defer></script>
 </head>
-
 <body>
   <header>
     <nav class="navbar d-flex align-center">
@@ -36,14 +39,14 @@
           <div class="nav-left-side col-10 d-flex align-center justify-between">
             <ul class="d-flex nav-list" id="nav-list-ul">
               <li class="nav-list-items">
-                <a href="/Users/rashad/Desktop/Front-EndProject/FrontEndProject/index.html"
+                <a href="#"
                   class="nav-list-items-links">Home</a>
               </li>
               <li class="nav-list-items submenu">
                 <a href="#" class="nav-list-items-links">Discover </a><i class="fal fa-angle-down"></i>
                 <ul class="submenu-list" id="first-submenu">
                   <li class="submenu-list-items">
-                    <a href="">Features</a>
+                    <a href="#home-features">Features</a>
                   </li>
                   <li class="submenu-list-items">
                     <a href="">Our Teams</a>
@@ -113,37 +116,41 @@
               <a href="" class="learn-more-button">LEARN MORE</a>
             </div>
             <div class="col-1"></div>
-              <div class="col-6 col-md-12 d-flex">
-                <div class="config col-6 col-md-12">
-                    <div class="first-picture-div col-sm-12">
-                      <img src="./assets/media/images/backgrounds/1.jpeg" alt="someone with laptop" class="cart-first-image cart">
-                    </div>
-                  <div class="third-picture-div col-sm-12">
-                    <img src="./assets/media/images/backgrounds/3.jpeg" alt="someone with laptop" class="cart-third-image cart">
-                    <div class="play">
-                      <a href="#">
-                        <i class="fas fa-play"></i>
-                      </a>
+            <div class="col-6 col-md-12 d-flex">
+              <div class="config col-6 col-md-12">
+                <div class="first-picture-div col-sm-12">
+                  <img src="./assets/media/images/backgrounds/1.jpeg" alt="someone with laptop"
+                    class="cart-first-image cart">
+                </div>
+                <div class="third-picture-div col-sm-12">
+                  <img src="./assets/media/images/backgrounds/3.jpeg" alt="someone with laptop"
+                    class="cart-third-image cart">
+                  <div class="play">
+                    <a href="#">
+                      <i class="fas fa-play"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="config col-6 col-md-12">
+                <div class="second-picture-div col-sm-12">
+                  <img src="./assets/media/images/backgrounds/2.jpeg" alt="someone with laptop"
+                    class="cart-second-image cart">
+                </div>
+                <div class="fourth-picture-div">
+                  <img src="./assets/media/images/backgrounds/1.jpeg" alt="someone with laptop"
+                    class="cart-fourth-image cart">
+                  <div class="overlay d-flex align-center">
+                    <div class="text">
+                      <strong>Our goal:</strong>
+                      <p>“We create technology for a sustainable future.”</p>
                     </div>
                   </div>
                 </div>
-                <div class="config col-6 col-md-12">
-                  <div class="second-picture-div col-sm-12">
-                    <img src="./assets/media/images/backgrounds/2.jpeg" alt="someone with laptop" class="cart-second-image cart">
-                  </div>
-                  <div class="fourth-picture-div">
-                    <img src="./assets/media/images/backgrounds/1.jpeg" alt="someone with laptop" class="cart-fourth-image cart">
-                    <div class="overlay d-flex align-center">
-                      <div class="text">
-                        <strong>Our goal:</strong>
-                        <p>“We create technology for a sustainable future.”</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </section>
     <section id="home-square-cards">
       <div class="container">
@@ -258,7 +265,8 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-12" id="cloud-image">
+          <div class="col-1"></div>
+          <div class="col-5 col-md-12 d-flex align-center" id="cloud-image">
             <img src="./assets/media/images/backgrounds/blue-1.png" alt="cloud service image" class="clouds">
           </div>
         </div>
@@ -276,7 +284,8 @@
                 Design & Development
               </h2>
               <p>
-                Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue, molestie faucibus metus ullamcorper vel.
+                Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue,
+                molestie faucibus metus ullamcorper vel.
               </p>
             </div>
             <div class="features-directions">
@@ -320,6 +329,41 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="home-overlay-section">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-md-6 col-sm-12 d-flex justify-center">
+              <div class="counter-item">
+                <h2 class="num">96</h2>
+                <p>Project<br>Complete</p>
+              </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12 d-flex justify-center">
+              <div class="counter-item">
+                <h2 class="num">190</h2>
+                <p>Happy<br>Costumer</p>
+              </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12 d-flex justify-center">
+              <div class="counter-item">
+                <h2 class="num">12</h2>
+                <p>Experienced<br>Staff</p>
+              </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12 d-flex justify-center">
+              <div class="counter-item">
+                <h2 class="num">46</h2>
+                <p>Ongoing<br>Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+
         </div>
       </div>
     </section>
@@ -395,5 +439,4 @@
     </div>
   </footer>
 </body>
-
 </html>

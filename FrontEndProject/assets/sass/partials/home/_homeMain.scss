@@ -2,4 +2,9 @@
 @import "./homeSquareCards";
 @import "./homeFeature";
 @import "./homeFeaturePart2";
+@import "./homeOverlay";
+@import "./homeOurTeams";
 @import "../main/navMain";
+html{
+    scroll-behavior:smooth;
+}

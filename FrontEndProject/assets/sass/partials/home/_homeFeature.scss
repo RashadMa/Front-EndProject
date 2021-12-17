@@ -1,4 +1,4 @@
-#home-features{
+#home-features {
     background: #F7FAFD;
     padding-top: 100px;
     padding-bottom: 80px;
@@ -39,14 +39,15 @@
 
             }
         }
+
         .directions {
             padding-right: 15px;
-            // padding-left: 15px;
         }
-        #padding-remover{
+
+        #padding-remover {
             padding-left: 0;
         }
-        
+
         .direction-button {
             position: relative;
 
@@ -72,7 +73,6 @@
             }
 
             span {
-                // position: relative;
                 z-index: 2;
                 transition: all 0.3s ease 0s;
                 color: $second-font-color;
@@ -94,17 +94,22 @@
             overflow: hidden;
         }
     }
-    #cloud-image{
+
+    #cloud-image {
         opacity: 0;
-        padding-left: 0;
+        transform: translateX(-20%);
         transition: all 0.8s ease 0s;
     }
-}
-@media only screen and (max-width: 992px) {
-    .clouds{
-        width: 100%;
+    .clouds {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
     }
-    #cloud-image{
-        padding: 0 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .clouds {
+        max-width: 100%;
     }
 }
