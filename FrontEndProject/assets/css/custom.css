@@ -4,6 +4,8 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+
 }
 ::selection {
   color: #fff;
