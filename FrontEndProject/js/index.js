@@ -20,5 +20,9 @@ $(document).ready(function () {
       $("#cloud-image").css("opacity", "1")
       $("#cloud-image").css("padding-left", "85px")
     }
+    if (window.scrollY > 1350) {
+      $("#cloud-image-part-2").css("opacity", "1")
+      $("#cloud-image-part-2").css("padding-left", "60px")
+    }
   })
 })
