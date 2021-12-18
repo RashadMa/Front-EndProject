@@ -7,6 +7,9 @@
   font-family: Nunito;
 
 }
+html{
+  scroll-behavior:smooth;
+}
 ::selection {
   color: #fff;
   background-color: #585ce9;

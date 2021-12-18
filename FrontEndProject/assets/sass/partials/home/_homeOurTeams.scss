@@ -21,6 +21,12 @@
             margin-bottom: 30px;
         }
     }
+    .card-col{
+        margin-bottom: 70px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.8s ease 0s;
+    }
 
     .card {
         box-shadow: rgba(100, 100, 111, 0.13) 0px 7px 29px 0px;
@@ -127,10 +133,5 @@
                 bottom: -55px;
             }
         }
-    }
-}
-@media only screen and (max-width: 992px) {
-    .card-col{
-        margin-bottom: 100px;
     }
 }

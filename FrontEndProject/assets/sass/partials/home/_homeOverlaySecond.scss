@@ -1,0 +1,17 @@
+#home-overlay-second {
+    .container-fluid {
+        background-image: url(../media/images/backgrounds/parallax.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        background-color: #585de9bf;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}

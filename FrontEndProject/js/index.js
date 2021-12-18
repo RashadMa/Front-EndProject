@@ -11,7 +11,7 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("sticky");
     }
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     if (window.scrollY > 140) {
       $(".square-card").css("opacity", "1");
       $(".square-card").css("transform", "translateY(0)");
@@ -23,6 +23,14 @@ $(document).ready(function () {
     if (window.scrollY > 1350) {
       $("#cloud-image-part-2").css("opacity", "1");
       $("#cloud-image-part-2").css("transform", "translateX(0)");
+    }
+    if (window.scrollY > 2200) {
+      $(".card-col").css("opacity", "1");
+      $(".card-col").css("transform", "translateX(0)");
+    }
+    if (window.scrollY > 2925) {
+      $(".pricing-card").css("opacity", "1");
+      $(".pricing-card").css("transform", "translateX(0)");
     }
   });
   //counter

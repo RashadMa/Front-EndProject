@@ -1,0 +1,132 @@
+#home-pricing-plan {
+    padding-bottom: 80px;
+    padding-top: 100px;
+    background: #F7FAFD;
+
+    .content-header {
+        h2 {
+            font-weight: 300;
+            font-size: 28px;
+            color: $second-font-color;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-weight: 300;
+            font-size: 16px;
+            color: $font-color;
+            line-height: 28px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .pricing-card {
+        box-shadow: rgba(100, 100, 111, 0.13) 0px 7px 29px 0px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin: 15px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.8s ease 0s;
+
+        .card-header {
+            border-bottom: 1px solid #F7FAFD;
+            height: 130px;
+            position: relative;
+
+            h3 {
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: $second-font-color;
+            }
+        }
+
+        .card-body {
+            margin-bottom: 40px;
+
+            .order {
+                width: 42px;
+                height: 42px;
+                background: #F7FAFD;
+                position: relative;
+                border-radius: 50%;
+                bottom: 21px;
+
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $main-color;
+                }
+            }
+
+            .price-about {
+                margin-top: 40px;
+                margin-bottom: 30px;
+
+                sup {
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $main-color;
+                }
+
+                .price {
+                    font-weight: 600;
+                    font-size: 34px;
+                    color: $main-color;
+                }
+
+                .sub {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $main-color;
+                }
+            }
+
+            .card-about {
+                li {
+                    text-align: center;
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: $second-font-color;
+                }
+
+                .del {
+                    text-decoration: line-through;
+                    color: #CCDCEA;
+                }
+            }
+        }
+
+        .card-footer {
+            a {
+                width: 160px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 5px;
+                background: $main-color;
+                margin-bottom: 40px;
+                font-weight: 600;
+                font-size: 12px;
+                color: #fff;
+                letter-spacing: 1px;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    background: $hover-color;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pricing-cards:nth-child(3) {
+        margin: 0 auto;
+    }
+}
