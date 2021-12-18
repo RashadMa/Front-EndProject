@@ -5,13 +5,18 @@ $(document).ready(function () {
     $("#nav-list-ul").css("background", "white");
   });
   //main
+
+  $("#about-help .square-card").css("opacity", "1");
+  $("#about-help .square-card").css("transform", "translateY(0)");
+  console.log("salam");
+
   $(document).on("scroll", function () {
     if (window.scrollY > 30) {
       $(".navbar").addClass("sticky");
     } else {
       $(".navbar").removeClass("sticky");
     }
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY > 140) {
       $(".square-card").css("opacity", "1");
       $(".square-card").css("transform", "translateY(0)");
@@ -42,7 +47,7 @@ $(document).ready(function () {
 //       $(this).next().slideToggle();
 //   })
 // });
-// $(document).ready(function(){ 
+// $(document).ready(function(){
 //   $(".hamburger").click(function(e){
 //     if(!$(".accordion").hasClass(".active")){
 //       $(".accordion").css("display","block");

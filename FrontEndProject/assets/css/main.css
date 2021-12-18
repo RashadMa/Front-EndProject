@@ -951,6 +951,75 @@ footer {
     top: 0;
     left: 0; }
 
+#about-help {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: #F7FAFD; }
+  #about-help .content-header h2 {
+    font-weight: 300;
+    font-size: 28px;
+    color: #3B566E;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  #about-help .content-header p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 30px; }
+  #about-help .square-card {
+    box-shadow: rgba(17, 12, 46, 0.075) 0px 48px 100px 0px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.8s ease 0s;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transform: translateY(100px);
+    opacity: 0; }
+    #about-help .square-card:hover {
+      background-color: #585CE9; }
+      #about-help .square-card:hover h5,
+      #about-help .square-card:hover p {
+        color: #fff; }
+    #about-help .square-card .card-icon {
+      text-align: center;
+      width: 67px;
+      height: 67px;
+      line-height: 70px;
+      margin: auto;
+      position: relative;
+      margin-bottom: 20px;
+      background: #F7FAFD;
+      border-radius: 50%; }
+      #about-help .square-card .card-icon i {
+        font-size: 18px;
+        color: #585CE9; }
+    #about-help .square-card h5 {
+      font-family: Nunito;
+      font-weight: 300;
+      font-size: 16px;
+      color: #3B566E;
+      letter-spacing: 0.7px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s ease 0s; }
+    #about-help .square-card p {
+      font-family: Nunito;
+      font-weight: 300;
+      font-size: 14px;
+      color: #6F8BA4;
+      letter-spacing: 0.88px;
+      line-height: 26px;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+      margin-bottom: 0px; }
+
 footer {
   background-color: #585CE9;
   padding-top: 70px;
