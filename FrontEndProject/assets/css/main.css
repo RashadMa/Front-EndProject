@@ -5,13 +5,17 @@
   background: url(../media/images/backgrounds/header-bg.svg) top left no-repeat; }
   #home-welcoming .config {
     overflow: hidden;
-    border-radius: 5px;
     margin: 6px; }
-  #home-welcoming .first-picture-div:hover img,
-  #home-welcoming .second-picture-div:hover img,
-  #home-welcoming .third-picture-div:hover img,
-  #home-welcoming .fourth-picture-div:hover img {
-    transform: scale(1.1); }
+  #home-welcoming .first-picture-div,
+  #home-welcoming .second-picture-div,
+  #home-welcoming .third-picture-div,
+  #home-welcoming .fourth-picture-div {
+    border-radius: 5px; }
+    #home-welcoming .first-picture-div:hover img,
+    #home-welcoming .second-picture-div:hover img,
+    #home-welcoming .third-picture-div:hover img,
+    #home-welcoming .fourth-picture-div:hover img {
+      transform: scale(1.1); }
   #home-welcoming .cart-first-image,
   #home-welcoming .cart-second-image,
   #home-welcoming .cart-third-image,
@@ -682,9 +686,9 @@
   .blog-cards:nth-child(3) {
     margin: 0 auto; } }
 
-.navbar {
+.nav {
   background: #fff;
-  height: 80px !important;
+  height: 80px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
 
 #about-welcoming {
@@ -956,6 +960,67 @@
     #about-our-vision .place .image {
       width: 100%;
       height: 100%; } }
+
+.nav {
+  background: #fff;
+  height: 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+
+#features-welcoming {
+  padding-top: 80px; }
+  #features-welcoming .about-us {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+  #features-welcoming .container-fluid {
+    background-image: url(../media/images/backgrounds/2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative; }
+    #features-welcoming .container-fluid h1 {
+      font-weight: 400;
+      font-size: 36px;
+      height: 50px;
+      line-height: 46px;
+      letter-spacing: 1.4px;
+      color: #E5E9F7;
+      position: relative;
+      z-index: 30;
+      margin-bottom: 10px; }
+      #features-welcoming .container-fluid h1::before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        width: 19px;
+        height: 2px;
+        background: #fff;
+        border-radius: 100px; }
+    #features-welcoming .container-fluid span {
+      font-weight: 300;
+      font-size: 14px;
+      color: #E5E9F7;
+      margin-left: 10px;
+      position: relative;
+      z-index: 30;
+      cursor: pointer; }
+      #features-welcoming .container-fluid span a {
+        font-weight: 300;
+        font-size: 14px;
+        color: #E5E9F7; }
+        #features-welcoming .container-fluid span a i {
+          margin-left: 5px;
+          transform: translateY(1.5px); }
+  #features-welcoming .overlay {
+    position: absolute;
+    background-color: #585de9bf;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
 
 footer {
   background-color: #585CE9;
