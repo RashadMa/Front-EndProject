@@ -8,8 +8,6 @@ $(document).ready(function () {
 
   $("#about-help .square-card").css("opacity", "1");
   $("#about-help .square-card").css("transform", "translateY(0)");
-  console.log("salam");
-
   $(document).on("scroll", function () {
     if (window.scrollY > 30) {
       $(".navbar").addClass("sticky");
