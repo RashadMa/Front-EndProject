@@ -36,3 +36,21 @@ $(document).ready(function () {
   //counter
   $(".num").counterUp({ delay: 10, time: 1000 });
 });
+// $(document).ready(function(){
+//   $(".accordionheader").click(function(e){
+//     $(".accordionbody").not($(this).next()).slideUp();
+//       $(this).next().slideToggle();
+//   })
+// });
+// $(document).ready(function(){ 
+//   $(".hamburger").click(function(e){
+//     if(!$(".accordion").hasClass(".active")){
+//       $(".accordion").css("display","block");
+//       $(".accordion").addClass(".active");
+//     }
+//     else{
+//       $(".accordion").css("display","none");
+//       $(".accordion").removeClass(".active")
+//     }
+//   })
+// });
