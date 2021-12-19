@@ -34,10 +34,9 @@
     </script>
   <script src="./js/index.js" defer></script>
 </head>
-
 <body>
   <header>
-    <nav class="navbar d-flex align-center">
+    <nav class="navbar d-flex align-center nav">
       <div class="container custom-container">
         <div class="row custom-row justify-between">
           <div class="nav-right-side col-2 d-flex align-center">
@@ -50,7 +49,7 @@
           <div class="nav-left-side col-10 d-flex align-center justify-between">
             <ul class="d-flex nav-list" id="nav-list-ul">
               <li class="nav-list-items">
-                <a href="#" class="nav-list-items-links">Home</a>
+                <a href="./index.html" class="nav-list-items-links">Home</a>
               </li>
               <li class="nav-list-items submenu">
                 <a href="#" class="nav-list-items-links">Discover </a><i class="fal fa-angle-down"></i>
@@ -105,6 +104,14 @@
     </nav>
   </header>
   <main>
+    <section class="loader">
+      <div id="preloader">
+        <div id="loader" class="spinner">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+    </section>
     <section id="contact-welcoming">
       <div class="container-fluid">
         <div class="container">
@@ -139,7 +146,7 @@
           </div>
         </div>
         <div class="row justify-center">
-          <div class="col-10 section">
+          <div class="col-10 col-sm-12 section">
             <div class="row">
               <div class="col-4 col-md-6 col-sm-12">
                 <div class="location d-flex">

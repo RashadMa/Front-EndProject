@@ -34,7 +34,7 @@
 
 <body>
   <header>
-    <nav class="navbar d-flex align-center">
+    <nav class="navbar d-flex align-center nav">
       <div class="container custom-container">
         <div class="row custom-row justify-between">
           <div class="nav-right-side col-2 d-flex align-center">
@@ -47,7 +47,7 @@
           <div class="nav-left-side col-10 d-flex align-center justify-between">
             <ul class="d-flex nav-list" id="nav-list-ul">
               <li class="nav-list-items">
-                <a href="#" class="nav-list-items-links">Home</a>
+                <a href="./index.html" class="nav-list-items-links">Home</a>
               </li>
               <li class="nav-list-items submenu">
                 <a href="#" class="nav-list-items-links">Discover </a><i class="fal fa-angle-down"></i>
@@ -102,6 +102,14 @@
     </nav>
   </header>
   <main>
+    <section class="loader">
+      <div id="preloader">
+        <div id="loader" class="spinner">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+    </section>
     <section id="faqs-welcoming">
       <div class="container-fluid">
         <div class="container">
@@ -214,8 +222,8 @@
             <div class="features-directions">
               <div class="row">
                 <div class="directions col-6 col-md-12" id="padding-remover">
-                  <a href="" class="direction-button">
-                    <i class="fal fa-angle-right"></i>
+                  <a href="" class="direction-button active">
+                    <i class="fal fa-angle-right active-2"></i>
                     <span>NearCloud</span>
                   </a>
                   <a href="" class="direction-button">

@@ -129,6 +129,8 @@
         display: none;
         flex-direction: column;
         cursor: pointer;
+        transition: all 0.4s;
+
 
         span {
             background-color: $second-font-color;
@@ -143,6 +145,23 @@
             width: 75%;
         }
     }
+
+    .toggle {
+        .line1 {
+            transform: translateY(10px) translateX(1px) rotate(45deg);
+            width: 100%;
+        }
+
+        .line2 {
+            opacity: 0;
+        }
+
+        .line3 {
+            transform: translateY(-10px) translateX(1px) rotate(-45deg);
+
+            width: 100%;
+        }
+    }
 }
 
 .sticky {
@@ -154,7 +173,7 @@
 @media only screen and (max-width: 992px) {
 
     .nav-left-side .nav-list,
-    .auth-list,
+    .auth-list, .submenu-list,
     .nav-options .nav-list {
         display: none;
         position: absolute;

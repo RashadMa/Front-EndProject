@@ -105,6 +105,18 @@
         min-width: 100%;
         height: auto;
     }
+    .active {
+        &::after {
+            height: 120px !important;
+            background: $main-color !important;
+        }
+    }
+
+    .active-2 {
+        color: #fff !important;
+        margin-left: 25px !important;
+        margin-right: 37px !important;
+    }
 }
 
 @media only screen and (max-width: 992px) {

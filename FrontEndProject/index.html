@@ -33,6 +33,7 @@
 </head>
 
 <body>
+
   <header>
     <nav class="navbar d-flex align-center">
       <div class="container custom-container">
@@ -93,15 +94,23 @@
             </ul>
           </div>
           <div class="hamburger-menu">
-            <span class="hamburger-bread"></span>
-            <span class="hamburger-meat"></span>
-            <span class="hamburger-bread"></span>
+            <span class="hamburger-bread line1"></span>
+            <span class="hamburger-meat line2"></span>
+            <span class="hamburger-bread line3"></span>
           </div>
         </div>
       </div>
     </nav>
   </header>
   <main>
+    <section class="loader">
+      <div id="preloader">
+        <div id="loader" class="spinner">
+          <div id="shadow"></div>
+          <div id="box"></div>
+        </div>
+      </div>
+    </section>
     <section id="home-welcoming">
       <div class="container-fluid">
         <div class="container">
@@ -233,8 +242,8 @@
             <div class="features-directions">
               <div class="row">
                 <div class="directions col-6 col-md-12" id="padding-remover">
-                  <a href="" class="direction-button">
-                    <i class="fal fa-angle-right"></i>
+                  <a href="" class="direction-button active">
+                    <i class="fal fa-angle-right active-2"></i>
                     <span>NearCloud</span>
                   </a>
                   <a href="" class="direction-button">
@@ -284,7 +293,8 @@
           <div class="col-6 col-md-12" id="cloud-image-part-2">
             <img src="./assets/media/images/backgrounds/blue-2.png" alt="cloud service image" class="clouds">
           </div>
-          <div class="col-6 col-md-12">
+          <div class="col-1"></div>
+          <div class="col-5 col-md-12">
             <div class="features-content">
               <h2>
                 Design & Development
@@ -297,8 +307,8 @@
             <div class="features-directions">
               <div class="row">
                 <div class="directions col-6 col-md-12" id="padding-remover">
-                  <a href="" class="direction-button">
-                    <i class="fal fa-angle-right"></i>
+                  <a href="" class="direction-button active">
+                    <i class="fal fa-angle-right active-2"></i>
                     <span>Web Design</span>
                   </a>
                   <a href="" class="direction-button">
@@ -537,7 +547,7 @@
           </div>
           <div class="col-4 col-md-6 col-sm-12 pricing-cards">
             <div class="pricing-card">
-              <div class="card-header d-flex align-center justify-center">
+              <div class="card-header card-before d-flex align-center justify-center">
                 <h3>ADVANCED PLAN</h3>
               </div>
               <div class="card-body">
@@ -644,7 +654,7 @@
                   Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus
                   dignissim.
                 </p>
-                <a href="" class="section-button">READ MORE</a>
+                <a href="" class="section-button btn">READ MORE</a>
               </div>
             </div>
           </div>

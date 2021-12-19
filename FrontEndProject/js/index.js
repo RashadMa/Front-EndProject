@@ -1,8 +1,13 @@
 //navigation
 $(document).ready(function () {
   $(".hamburger-menu").on("click", function () {
+    $(".hamburger-menu").toggleClass("toggle");
     $("#nav-list-ul").slideToggle("fast");
     $("#nav-list-ul").css("background", "white");
+  });
+  $(".submenu").on("click", function () {
+    $("#first-submenu").slideToggle();
+    $("#second-submenu").slideToggle();
   });
   //main
   $("#about-help .square-card").css("opacity", "1");
@@ -13,7 +18,6 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("sticky");
     }
-    // console.log(window.scrollY);
     if (window.scrollY > 140) {
       $(".square-card").css("opacity", "1");
       $(".square-card").css("transform", "translateY(0)");
@@ -47,27 +51,12 @@ function initMap() {
   });
   let marker = new google.maps.Marker({ position: location, map: map });
 }
-// $(document).ready(function(){
-//   $(".accordionheader").click(function(e){
-//     $(".accordionbody").not($(this).next()).slideUp();
-//       $(this).next().slideToggle();
-//   })
-// });
-// $(document).ready(function(){
-//   $(".hamburger").click(function(e){
-//     if(!$(".accordion").hasClass(".active")){
-//       $(".accordion").css("display","block");
-//       $(".accordion").addClass(".active");
-//     }
-//     else{
-//       $(".accordion").css("display","none");
-//       $(".accordion").removeClass(".active")
-//     }
-//   })
-// });
 $(document).ready(function () {
   $(".accordionheader").click(function (e) {
     $(".accordionbody").not($(this).next()).slideUp("fast");
     $(this).next().slideToggle("fast");
   });
+});
+$(window).on("load", function () {
+  $("#preloader").fadeOut("slow");
 });

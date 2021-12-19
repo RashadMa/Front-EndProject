@@ -33,6 +33,7 @@ html {
   color: #fff;
   letter-spacing: 1px;
   transition: all 0.2s;
+  margin: 0 auto;
 }
 
 .section-button :hover {
