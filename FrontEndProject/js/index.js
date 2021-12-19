@@ -5,7 +5,6 @@ $(document).ready(function () {
     $("#nav-list-ul").css("background", "white");
   });
   //main
-
   $("#about-help .square-card").css("opacity", "1");
   $("#about-help .square-card").css("transform", "translateY(0)");
   $(document).on("scroll", function () {
@@ -39,6 +38,15 @@ $(document).ready(function () {
   //counter
   $(".num").counterUp({ delay: 10, time: 1000 });
 });
+//map
+function initMap() {
+  let location = { lat: -37.8136, lng: 144.9631 };
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: location,
+  });
+  let marker = new google.maps.Marker({ position: location, map: map });
+}
 // $(document).ready(function(){
 //   $(".accordionheader").click(function(e){
 //     $(".accordionbody").not($(this).next()).slideUp();
@@ -57,3 +65,9 @@ $(document).ready(function () {
 //     }
 //   })
 // });
+$(document).ready(function () {
+  $(".accordionheader").click(function (e) {
+    $(".accordionbody").not($(this).next()).slideUp();
+    $(this).next().slideToggle();
+  });
+});

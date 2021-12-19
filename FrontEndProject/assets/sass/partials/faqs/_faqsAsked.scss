@@ -1,0 +1,108 @@
+#faqs-asked {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background: #F7FAFD;
+
+    .faq {
+        padding: 10px;
+
+        h2 {
+
+            font-weight: 300;
+            font-size: 30px;
+            color: $main-color;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 1px;
+            line-height: 28px;
+            color: #6F8BA4;
+            margin-bottom: 28px;
+        }
+    }
+
+    .section-button {
+        padding: 15px 25px;
+
+        &:hover {
+            background: $hover-color;
+        }
+    }
+}
+
+.accordion {
+    transition: 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+
+    .accordionheader {
+        cursor: pointer;
+        font-size: 15px;
+        padding: 20px;
+        letter-spacing: 2px;
+        color: #3b566e;
+        overflow: hidden;
+        transition: 0.3s;
+        font-weight: 300;
+
+        &:hover {
+            transform: translateX(10px);
+            background-color: #f7fafd49;
+        }
+    }
+
+    .accordionbody {
+        display: none;
+
+        .body {
+            padding: 30px;
+            padding-left: 35px;
+            padding-bottom: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #6F8BA4;
+            line-height: 28px;
+            letter-spacing: 1px;
+            border-top: 1px solid #F3F8FF;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: .88px;
+            line-height: 28px;
+        }
+
+        // a {
+        //     cursor: pointer;
+        //     display: block;
+        //     font-size: 10px;
+        //     padding: 20px;
+        //     letter-spacing: 2px;
+        //     color: #3b566e;
+        //     overflow: hidden;
+        //     transition: 0.3s;
+
+        //     &:hover {
+        //         transform: translateX(10px);
+        //         text-decoration: none;
+        //         color: #3b566e;
+        //     }
+
+        //     i {
+        //         float: right;
+        //     }
+        // }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    p {
+        text-align: center;
+    }
+}

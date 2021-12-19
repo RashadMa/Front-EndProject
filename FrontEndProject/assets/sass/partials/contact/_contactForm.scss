@@ -1,0 +1,107 @@
+#contact-form {
+    background: #F7FAFD;
+
+    .container {
+
+        border-top: 1px solid #f5f5f5;
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+
+    hr {
+        color: #f5f5f5;
+    }
+
+    #form-text {
+        padding: 0 15px;
+
+    }
+
+    .form {
+        .items {
+            padding: 0 15px;
+
+            input {
+                border: 1px solid #fff;
+                // position: absolute;
+                width: 100%;
+                height: 100%;
+                height: 50px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 50px;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                background: #fff;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                transition: all 0.2s;
+                margin-bottom: 30px;
+
+                &:focus {
+                    border: 1px solid $main-color;
+                    padding-left: 30px;
+                }
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+                padding: 20px;
+                border: 1px solid #eee;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                transition: all 0.3s ease 0s;
+                border-radius: 4px;
+                margin-bottom: 30px;
+
+                &:focus {
+                    border: 1px solid $main-color;
+                    padding-left: 30px;
+                }
+            }
+
+            button {
+                width: 160px;
+                line-height: 44px;
+                text-align: center;
+                border: none;
+                border-radius: 5px;
+                background: $main-color;
+                margin-bottom: 40px;
+                font-weight: 400;
+                font-size: 12px;
+                color: #fff;
+                letter-spacing: 1px;
+                transition: all 0.3s ease 0s;
+                outline: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: 300;
+            color: $font-color;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 28px;
+            color: $font-color;
+            font-weight: 300;
+            font-size: 14px;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact-map {
+        text-align: center;
+    }
+}
