@@ -67,7 +67,7 @@ function initMap() {
 // });
 $(document).ready(function () {
   $(".accordionheader").click(function (e) {
-    $(".accordionbody").not($(this).next()).slideUp();
-    $(this).next().slideToggle();
+    $(".accordionbody").not($(this).next()).slideUp("fast");
+    $(this).next().slideToggle("fast");
   });
 });
