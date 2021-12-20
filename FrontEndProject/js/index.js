@@ -5,10 +5,10 @@ $(document).ready(function () {
     $("#nav-list-ul").slideToggle("fast");
     $("#nav-list-ul").css("background", "white");
   });
-  $(".submenu").on("click", function () {
-    $("#first-submenu").slideToggle();
-    $("#second-submenu").slideToggle();
-  });
+  // $(".submenu").on("click", function () {
+  //   $("#first-submenu").slideToggle();
+  //   $("#second-submenu").slideToggle();
+  // });
   //main
   $("#about-help .square-card").css("opacity", "1");
   $("#about-help .square-card").css("transform", "translateY(0)");
